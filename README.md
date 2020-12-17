@@ -1,2 +1,7 @@
-# estudo_covid
- 
+# Análise de dados Covid-19
+
+Para essa análise foram retirados dados do [Brasil.io](https://https://brasil.io/dataset/covid19/caso/) no dia 12/11/2020, a [documentação](https://github.com/turicas/covid19-br) da base de dados está disponível para acesso. Esse dataset centraliza links e dados sobre boletins de número de casos das Secretarias Estaduais de Saúde (SES) sobre os casos de covid19 no Brasil (por município por dia), além de outros dados relevantes para a análise, como óbitos registrados em cartório (por estado por dia).
+
+A primeira parte do projeto foi o tratamento dos dados, não por problemas do dataset, mas para compreender melhor os dados e também para poder aprofundar nas análises. Dois exemplos de tratamento nessa base de dados foi em primeiro momento tentar compreender os dados NaN existentes no dataset e qual era sua importância, o segundo exemplo é que os dados de casos e de óbitos não eram dados diários, mas sim o acumulado até aquela data do total de casos e óbitos registrados, então foi retirado desse acumulado o registro diário de dados para poder fazer uma análise da evolução diária e da média móvel de casos e óbitos.
+
+As análises foram feitas inicialmente fazendo comparações de estados e municipios e a situação da pandemia no momento do estudo, assim como também a evolução dos dados até a data. Foram utilizados para uma análise mais pontual os dados da cidade de São Paulo - SP, em que com a média móvel de casos foram colocados em perspectivia com as datas que foram decretadas medidas de restrição de movimentação ou de relaxamento dessas restrições pelo Governo Estadual e Municipal.
